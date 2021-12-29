@@ -1,0 +1,9 @@
+gcloud compute instances create vivek-instance --machine-type=f1-micro --zone=us-central1-c 
+gcloud container clusters create vivek-cluster \
+--num-nodes 3 \
+--machine-type n-standard-1 \
+--enable-autoscaling \
+--min-nodes 1 \
+--max-nodes 7 \
+--zone europe-west1-b
+gcloud container clusters get-credentials vivek-instance --zone europe-west1-b 
