@@ -15,14 +15,6 @@ provider "google" {
   region = "US"
 }
 
-resource "google_service_account" "service-account" {
-  account_id   = "serviceaccountvmtest1"
-  disabled     = "false"
-  project      = "qwiklabs-gcp-02-8093e93eeb47"
-  display_name = "COMPUTE INSTANCE SERVICE ACCOUNT"
-  description  = "service account used for the vm compute instance"
-
-}
 
 resource "google_compute_instance" "testvm1" {
   name                      = "test-vm1"
@@ -48,10 +40,7 @@ resource "google_compute_instance" "testvm1" {
   }
   metadata_startup_script = "echo hi > /test.txt"
 
-  service_account {
-    email  = google_service_account.service-account.email
-    scopes = ["compute-rw"]
-  }
+ 
 }
 
 resource "google_storage_bucket" "test-bucket" {
