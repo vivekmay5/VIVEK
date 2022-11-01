@@ -13,6 +13,7 @@ terraform {
 
 provider "google" {
   region = "US"
+  project = "qwiklabs-gcp-01-38909d47dd0d"
 }
 
 
@@ -44,7 +45,7 @@ resource "google_compute_instance" "testvm1" {
 }
 
 resource "google_storage_bucket" "test-bucket" {
-  name                        = "qwiklabs-gcp-02-8093e93eeb47"
+  name                        = "qwiklabs-gcp-01-38909d47dd0d"
   location                    = "ASIA-EAST1"
   force_destroy               = "true"
   uniform_bucket_level_access = "true"
