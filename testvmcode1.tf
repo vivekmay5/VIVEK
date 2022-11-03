@@ -50,7 +50,7 @@ resource "google_storage_bucket" "test-bucket" {
   force_destroy               = "true"
   uniform_bucket_level_access = "true"
   storage_class               = "STANDARD"
-  depends_on                  = ["google_compute_instance.testvm1"]
+  
 
   lifecycle_rule {
     action {
