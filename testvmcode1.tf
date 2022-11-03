@@ -28,7 +28,7 @@ resource "google_compute_instance" "test-vm1" {
     initialize_params {
       size  = "8"
       type  = "pd-balanced"
-      image = "windows-sql-cloud/sql-web-2019-win-2022"
+      image = "debian-11-bullseye-v20221102"
     }
   }
 
