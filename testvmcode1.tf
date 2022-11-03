@@ -26,7 +26,7 @@ resource "google_compute_instance" "test-vm1" {
     auto_delete = "false"
     mode        = "READ_WRITE"
     initialize_params {
-      size  = "50"
+      size  = "8"
       type  = "pd-balanced"
       image = "windows-sql-cloud/sql-web-2019-win-2022"
     }
