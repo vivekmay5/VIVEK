@@ -13,7 +13,7 @@ terraform {
 
 provider "google" {
   region = "US"
-  project = "qwiklabs-gcp-01-38909d47dd0d"
+  project = "qwiklabs-gcp-00-363e7c1b4434"
 }
 
 
