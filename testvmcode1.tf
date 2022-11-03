@@ -19,7 +19,7 @@ provider "google" {
 
 resource "google_compute_instance" "test-vm1" {
   name                      = "test-vm1"
-  zone                      = "us-east1-b"
+  zone                      = "us-east1-a"
   machine_type              = "f1-micro"
   allow_stopping_for_update = "true"
   boot_disk {
