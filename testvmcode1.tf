@@ -19,7 +19,7 @@ provider "google" {
 
 resource "google_compute_instance" "testvm1" {
   name                      = "test-vm1"
-  zone                      = "us-central1-c"
+  zone                      = "us-central1-1"
   machine_type              = "c2d-standard-4"
   allow_stopping_for_update = "true"
   boot_disk {
