@@ -19,7 +19,7 @@ provider "google" {
 
 resource "google_compute_instance" "testvm1" {
   name                      = "test-vm1"
-  zone                      = "us-central1-a"
+  zone                      = "us-east1-b"
   machine_type              = "f1-micro"
   allow_stopping_for_update = "true"
   boot_disk {
@@ -45,7 +45,7 @@ resource "google_compute_instance" "testvm1" {
 }
 
 resource "google_storage_bucket" "test-bucket" {
-  name                        = "qwiklabs-gcp-01-38909d47dd0d"
+  name                        = "qwiklabs-gcp-00-363e7c1b4434"
   location                    = "US"
   force_destroy               = "true"
   uniform_bucket_level_access = "true"
