@@ -20,7 +20,7 @@ provider "google" {
 resource "google_compute_instance" "testvm1" {
   name                      = "test-vm1"
   zone                      = "us-central1-a"
-  machine_type              = "c2d-standard-4"
+  machine_type              = "f1-micro"
   allow_stopping_for_update = "true"
   boot_disk {
     auto_delete = "false"
