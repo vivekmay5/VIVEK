@@ -26,7 +26,7 @@ resource "google_compute_instance" "test-vm1" {
     auto_delete = "false"
     mode        = "READ_WRITE"
     initialize_params {
-      size  = "8"
+      size  = "10"
       type  = "pd-balanced"
       image = "debian-11-bullseye-v20221102"
     }
