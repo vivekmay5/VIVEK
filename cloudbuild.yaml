@@ -64,12 +64,12 @@ steps:
   args: 
   - '-c'
   - | 
-      if [ -d "master/$BRANCH_NAME/" ]; then
+        [ -d "master/$BRANCH_NAME/" ]; 
         cd master/$BRANCH_NAME      
         terraform apply -auto-approve
-      else
+      
         echo "***************************** SKIPPING APPLYING *******************************"
         echo "Branch '$BRANCH_NAME' does not represent an official environment."
         echo "*******************************************************************************"
-      fi
+      
 # [END tf-apply] 
