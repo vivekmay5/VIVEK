@@ -16,7 +16,7 @@ provider "google" {
   project = "qwiklabs-gcp-04-ac8aec3938e5"
 }
 
-resource "google_compute_instance" "test-vm1" {
+resource "google_compute_instance" "test-vm2" {
   name                      = "test-vm1"
   zone                      = "us-east1-d"
   machine_type              = "f1-micro"
