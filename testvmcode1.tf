@@ -21,7 +21,7 @@ resource "google_compute_instance" "test-vm1" {
   name                      = "test-vm1"
   zone                      = "us-east1-a"
   machine_type              = "f1-micro"
-  allow_stopping_for_update = "true"
+  allow_stopping_for_update = "false"
   boot_disk {
     auto_delete = "false"
     mode        = "READ_WRITE"
