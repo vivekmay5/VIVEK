@@ -14,7 +14,7 @@ provider "google" {
 project_id = var.projectid
 region = "us-central1"
 }
-resource "google_compute_instance" "test-vm" {
+resource "google_compute_instance" "test-vm1" {
 name = var.name
 machine_type = var.machine_type
 zone = "us-central1-a"
