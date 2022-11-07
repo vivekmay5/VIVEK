@@ -15,7 +15,7 @@ steps:
   - '-c'
   - |
       if [ -d "master/$BRANCH_NAME/" ]; then
-        cd master/$BRANCH_NAME
+        cd master
         terraform init
       else
         for dir in master/*/
@@ -39,7 +39,7 @@ steps:
   - '-c'
   - | 
       if [ -d "master/$BRANCH_NAME/" ]; then
-        cd master/$BRANCH_NAME
+        cd master
         terraform plan
       else
         for dir in master/*/
@@ -65,7 +65,7 @@ steps:
   - '-c'
   - | 
         [ -d "master/$BRANCH_NAME/" ]; 
-        cd master/$BRANCH_NAME      
+        cd master      
         terraform apply -auto-approve
       
         echo "***************************** SKIPPING APPLYING *******************************"
