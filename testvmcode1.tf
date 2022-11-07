@@ -38,13 +38,9 @@ resource "google_compute_instance" "test-vm1" {
       network_tier = "STANDARD"
     }
   }
-  metadata_startup_script = "echo hi > /test.txt"
+  
 
-  service_account {
-    # Google recommends custom service accounts that have cloud-platform scope and permissions granted via IAM Roles.
-    email  = google_service_account.default.email
-    scopes = ["cloud-platform"]
-  }
+  
  
 }
 
