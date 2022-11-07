@@ -16,11 +16,6 @@ provider "google" {
   project = "qwiklabs-gcp-04-ac8aec3938e5"
 }
 
-resource "google_service_account" "default" {
-  account_id   = "service_account_id"
-  display_name = "Service Account"
-}
-
 resource "google_compute_instance" "test-vm1" {
   name                      = "test-vm1"
   zone                      = "us-east1-a"
