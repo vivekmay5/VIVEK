@@ -3,6 +3,7 @@ terraform {
     google = {
       source  = "registry.terraform.io/hashicorp/google"
       version = "4.41.0"
+      configuration_aliases = [ google.loc1, google.loc2 ]
     }
   }
   backend "local" {
