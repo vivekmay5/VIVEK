@@ -11,11 +11,6 @@ terraform {
   }
 }
 
-provider "google" {
-  region = "US"
-  project = "qwiklabs-gcp-01-62d27b6d42f6"
-}
-
 resource "google_compute_instance" "testvm1" {
   name                      = "test-vm1"
   zone                      = "us-east1-d"
@@ -39,9 +34,6 @@ resource "google_compute_instance" "testvm1" {
     }
   }
   
-
-  
- 
 }
 
 resource "google_storage_bucket" "test-bucket" {
